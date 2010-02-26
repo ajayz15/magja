@@ -32,6 +32,13 @@ We recommends to use Eclipse Subversive Plugin to use SVN on your eclipse, you c
 Once you had check out the project, right-click on the project, the sub-menu will pop-up, then go to Maven->Enable Dependency Management.
 Wait a little until all dependencies be downloaded to your maven repository.
 
-That's all, to learn more about maven go to: [http://maven.apache.org/index.html]
+To learn more about maven go to: [http://maven.apache.org/index.html]
+
+=== Change the Magento Properties File ===
+
+Change the file /src/main/resources/magento-api.properties with proper data to your magento installation.
+
+
+That's all, to test if you can connect to magento API, run the testConnectionLogin method of the class ConnectionTest as a JUnit Test.
 
 ----
