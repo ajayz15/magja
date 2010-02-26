@@ -39,6 +39,6 @@ To learn more about maven go to: [http://maven.apache.org/index.html]
 Change the file /src/main/resources/magento-api.properties with proper data to your magento installation.
 
 
-That's all, to test if you can connect to magento API, run the testConnectionLogin method of the class ConnectionTest as a JUnit Test.
+That's all, to test if you can connect to magento API, run the "testConnectionLogin" method of the class "ConnectionTest" as JUnit Test.
 
 ----
