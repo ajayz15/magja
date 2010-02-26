@@ -25,8 +25,9 @@ Check out the project from the repository http://magja.googlecode.com/svn/ as a 
 
 === Enable Project Dependency Management ===
 
-Once you had check out the project, righ-click on the project, the sub-menu will pop-up, then go to Maven->Enable Dependency Management
+Once you had check out the project, right-click on the project, the sub-menu will pop-up, then go to Maven->Enable Dependency Management.
+Wait a little until all dependencies be downloaded to your maven repository.
 
-Wait a little until all dependencies be downloaded to your maven repository
+That's all, to learn more about maven go to: [http://maven.apache.org/index.html]
 
 ----
