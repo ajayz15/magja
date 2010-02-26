@@ -1,0 +1,11 @@
+#summary Setup magja project for development
+
+= Setup developer enviorment  =
+
+== Prerequisites ==
+
+to do
+
+= Details =
+
+to do
