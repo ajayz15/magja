@@ -1,10 +1,17 @@
 #summary Setup magja project for development
 
-= Setup developer enviorment  =
+= Setup developer environment  =
 
-== Prerequisites ==
+== Setup in Eclipse ==
 
-to do
+* Install Maven for Eclipse Plugin [http://m2eclipse.sonatype.org/installing-m2eclipse.html]
+ # Select Help > Install New Software. This should display the "Install" dialog.
+ # Paste the Update Site URL into the field named "Work with:" and press Enter. Pressing Enter should cause Eclipse to update list of available plugins and components.
+ # Choose the component listed under m2eclipse: "Maven Integration for Eclipse (Required)".
+ # Click Next. Eclipse will then check to see if there are any issues which would prevent a successful installation.
+ # Click Next and agree to the terms of the Eclipse Public License v1.0.
+ # Click Finish to begin the installation process. Eclipse will then download and install the necessary components.
+ # Once the installation process is finished, Eclipse will ask you if you want to restart the IDE. It's strongly recommends that you restart your IDE after installing m2eclipse.
 
 = Details =
 
