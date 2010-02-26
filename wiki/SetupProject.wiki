@@ -2,9 +2,13 @@
 
 = Setup developer environment  =
 
+----
 == Setup in Eclipse ==
 
-* Install Maven for Eclipse Plugin [http://m2eclipse.sonatype.org/installing-m2eclipse.html]
+=== Install Maven for Eclipse Plugin ===
+
+On Eclipse, follow these instructions:
+
  # Select Help > Install New Software. This should display the "Install" dialog.
  # Paste the Update Site URL into the field named "Work with:" and press Enter. Pressing Enter should cause Eclipse to update list of available plugins and components.
  # Choose the component listed under m2eclipse: "Maven Integration for Eclipse (Required)".
@@ -13,6 +17,16 @@
  # Click Finish to begin the installation process. Eclipse will then download and install the necessary components.
  # Once the installation process is finished, Eclipse will ask you if you want to restart the IDE. It's strongly recommends that you restart your IDE after installing m2eclipse.
 
-= Details =
+Source: [http://m2eclipse.sonatype.org/installing-m2eclipse.html]
 
-to do
+=== Check out the project from SVN respository ===
+
+Check out the project from the repository http://magja.googlecode.com/svn/ as a new project on you eclipse's workspace.
+
+=== Enable Project Dependency Managment ===
+
+Once you had check out the project, righ-click on the project, the submenu will popup, then go to Maven->Enable Dependency Management
+
+Wait a little until all dependencies be downloaded to your maven repository
+
+----
