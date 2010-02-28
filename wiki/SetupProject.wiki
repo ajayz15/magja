@@ -28,8 +28,7 @@ We recommends to use Eclipse Subversive Plugin to use SVN on your eclipse, you c
 
 === Enable Project Dependency Management ===
 
-Once you had check out the project, right-click on the project, the sub-menu will pop-up, then go to Maven->Enable Dependency Management.
-Wait a little until all dependencies be downloaded to your maven repository.
+Once you had check out the project, right-click on the project, the sub-menu will pop-up, then go to *Maven* > *Enable Dependency Management*. Wait a little until all dependencies be downloaded to your maven repository.
 
 To learn more about maven go to: [http://maven.apache.org/index.html]
 
