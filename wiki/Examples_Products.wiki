@@ -30,33 +30,34 @@ product.setInStock(true);
 
 // you can add images for the product too
 
-byte[] data1 = MagjaFileUtils.getBytesFromFileURL("http://code.google.com/images/code_sm.png");
+byte[] data = MagjaFileUtils.getBytesFromFileURL("http://code.google.com/images/code_sm.png");
 
-Media image1 = new Media();
-image1.setName("guevara");
-image1.setMime("image/jpeg");
-image1.setData(data1);
+Media image = new Media();
+image.setName("google");
+image.setMime("image/jpeg");
+image.setData(data);
 
-Set<ProductMedia.Type> types1 = new HashSet<ProductMedia.Type>();
-types1.add(ProductMedia.Type.IMAGE);
+Set<ProductMedia.Type> types = new HashSet<ProductMedia.Type>();
+types.add(ProductMedia.Type.IMAGE);
+types.add(ProductMedia.Type.SMALL_IMAGE);
 
-ProductMedia prd_media1 = new ProductMedia();
-prd_media1.setExclude(false);
-prd_media1.setImage(image1);
-prd_media1.setLabel("Image for Product");
-prd_media1.setPosition(1);
-prd_media1.setTypes(types1);
+ProductMedia media = new ProductMedia();
+media.setExclude(false);
+media.setImage(image);
+media.setLabel("Image for Product");
+media.setPosition(1);
+media.setTypes(types);
 
-product.addMedia(prd_media1);
+product.addMedia(media);
 
 // before save, you can add linked products, like following:
-ProductLink link_1 = new ProductLink();
-link_1.setId("ID_OR_SKU_OF_LINKED");
-link_1.setPosition(1);
-link_1.setQty(new Double(10));
-link_1.setLinkType(LinkType.RELATED);
+ProductLink link = new ProductLink();
+link.setId("ID_OR_SKU_OF_LINKED");
+link.setPosition(1);
+link.setQty(new Double(10));
+link.setLinkType(LinkType.RELATED);
 
-product.addLink(link_1);
+product.addLink(link);
 
 // then, we just instanciate the service to persist the product
 RemoteServiceFactory.getProductRemoteService().save(product);
