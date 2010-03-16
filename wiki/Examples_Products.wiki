@@ -1,7 +1,7 @@
 #examples for manipulate products data
 
 = Examples for manipulate Products =
-
+----
 == Listing Products ==
 
 === List all products with dependencies (slower) ===
