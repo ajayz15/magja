@@ -5,56 +5,56 @@
 == Creating a New Product ==
 
 {{{
-		Product product = new Product();
-		product.setSku("SKUOFPRODUCT");
-		product.setName(Product Name");
-		product.setShortDescription("This is a short description");
-		product.setDescription("This is a description for Product");
-		product.setPrice(new Double(250.99));
-		product.setCost(new Double(100.22));
-		product.setEnabled(true);
-		product.setWeight(new Double(0.500));
+Product product = new Product();
+product.setSku("SKUOFPRODUCT");
+product.setName(Product Name");
+product.setShortDescription("This is a short description");
+product.setDescription("This is a description for Product");
+product.setPrice(new Double(250.99));
+product.setCost(new Double(100.22));
+product.setEnabled(true);
+product.setWeight(new Double(0.500));
 product.setType(ProductTypeEnum.SIMPLE.getProductType());
 
-		// you can set the properties not mapped like the following too:
-		product.set("meta_description", "one two tree");
-		product.set("enable_googlecheckout", 1);
+// you can set the properties not mapped like the following too:
+product.set("meta_description", "one two tree");
+product.set("enable_googlecheckout", 1);
 
-		// websites - set the website for product
-		Integer[] websites = { 1 };
-		product.setWebsites(websites);
+// websites - set the website for product
+Integer[] websites = { 1 };
+product.setWebsites(websites);
 
-		// inventory - set the inventory for product
-		product.setQty(new Double(20));
-		product.setInStock(true);
+// inventory - set the inventory for product
+product.setQty(new Double(20));
+product.setInStock(true);
 
 // you can add images for the product too
 
-			byte[] data1 = MagjaFileUtils.getBytesFromFileURL("http://code.google.com/images/code_sm.png");
+byte[] data1 = MagjaFileUtils.getBytesFromFileURL("http://code.google.com/images/code_sm.png");
 
-			Media image1 = new Media();
-			image1.setName("guevara");
-			image1.setMime("image/jpeg");
-			image1.setData(data1);
+Media image1 = new Media();
+image1.setName("guevara");
+image1.setMime("image/jpeg");
+image1.setData(data1);
 
-			Set<ProductMedia.Type> types1 = new HashSet<ProductMedia.Type>();
-			types1.add(ProductMedia.Type.IMAGE);
+Set<ProductMedia.Type> types1 = new HashSet<ProductMedia.Type>();
+types1.add(ProductMedia.Type.IMAGE);
 
-			ProductMedia prd_media1 = new ProductMedia();
-			prd_media1.setExclude(false);
-			prd_media1.setImage(image1);
-			prd_media1.setLabel("Image for Product");
-			prd_media1.setPosition(1);
-			prd_media1.setTypes(types1);
+ProductMedia prd_media1 = new ProductMedia();
+prd_media1.setExclude(false);
+prd_media1.setImage(image1);
+prd_media1.setLabel("Image for Product");
+prd_media1.setPosition(1);
+prd_media1.setTypes(types1);
 
-			product.addMedia(prd_media1);
+product.addMedia(prd_media1);
 
 // before save, you can add linked products, like following:
 ProductLink link_1 = new ProductLink();
-		link_1.setId("ID_OR_SKU_OF_LINKED");
-		link_1.setPosition(1);
-		link_1.setQty(new Double(10));
-		link_1.setLinkType(LinkType.RELATED);
+link_1.setId("ID_OR_SKU_OF_LINKED");
+link_1.setPosition(1);
+link_1.setQty(new Double(10));
+link_1.setLinkType(LinkType.RELATED);
 
 product.getLinks().add(link_1);
 
