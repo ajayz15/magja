@@ -1,0 +1,10 @@
+#UML diagrams for Products
+
+=Product Diagrams=
+
+
+==Model==
+http://magja.googlecode.com/files/ProductModel.png
+
+==Service==
+http://magja.googlecode.com/files/ProductService.png
