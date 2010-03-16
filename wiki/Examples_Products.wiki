@@ -13,7 +13,7 @@ List<Product> products = RemoteServiceFactory.getProductRemoteService().listAll(
 {{{
 List<Product> products = RemoteServiceFactory.getProductRemoteService().listAllNoDep();
 }}}
-
+----
 == Get Product ==
 
 === Get product by ID ===
@@ -25,7 +25,7 @@ Product product = RemoteServiceFactory.getProductRemoteService().getById(product
 {{{
 Product product = RemoteServiceFactory.getProductRemoteService().getBySku(productSKU);
 }}}
-
+----
 == Creating a New Product ==
 
 {{{
