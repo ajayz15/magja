@@ -7,7 +7,7 @@
 {{{
 Product product = new Product();
 product.setSku("SKUOFPRODUCT");
-product.setName(Product Name");
+product.setName("Product Name");
 product.setShortDescription("This is a short description");
 product.setDescription("This is a description for Product");
 product.setPrice(new Double(250.99));
