@@ -59,9 +59,6 @@ link_1.setLinkType(LinkType.RELATED);
 product.getLinks().add(link_1);
 
 // then, we just instanciate the service to persist the product
-
-ProductRemoteService service = RemoteServiceFactory.getProductRemoteService();
-
-service.save(product);
+RemoteServiceFactory.getProductRemoteService().save(product);
 
 }}}
