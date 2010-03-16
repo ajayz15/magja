@@ -39,6 +39,7 @@ product.setCost(new Double(100.22));
 product.setEnabled(true);
 product.setWeight(new Double(0.500));
 product.setType(ProductTypeEnum.SIMPLE.getProductType());
+product.setAttributeSet(new ProductAttributeSet(4, "Default"));
 
 // you can set the properties not mapped like the following too:
 product.set("meta_description", "one two tree");
