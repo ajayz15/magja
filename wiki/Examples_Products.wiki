@@ -1,6 +1,18 @@
 #examples for manipulate products data
 
-= Examples for manipulating Products Module =
+= Examples for manipulate Products =
+
+== Listing Products ==
+
+=== List all products with dependencies (slower) ===
+{{{
+List<Product> products = RemoteServiceFactory.getProductRemoteService().listAll();
+}}}
+
+=== List all products without dependencies (faster) ===
+{{{
+List<Product> products = RemoteServiceFactory.getProductRemoteService().listAllNoDep();
+}}}
 
 == Creating a New Product ==
 
