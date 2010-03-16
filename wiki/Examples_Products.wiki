@@ -56,7 +56,7 @@ link_1.setPosition(1);
 link_1.setQty(new Double(10));
 link_1.setLinkType(LinkType.RELATED);
 
-product.getLinks().add(link_1);
+product.addLink(link_1);
 
 // then, we just instanciate the service to persist the product
 RemoteServiceFactory.getProductRemoteService().save(product);
