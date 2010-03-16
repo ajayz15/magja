@@ -1,6 +1,6 @@
 #UML diagrams for Products
 
-=Product Diagrams=
+=Product UML Diagrams=
 
 
 ==Model==
