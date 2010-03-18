@@ -1,4 +1,4 @@
-#UML diagrams for Products
+#summary UML diagrams for Products
 
 =Product UML Diagrams=
 
