@@ -1,0 +1,26 @@
+#summary examples of Category Service usage.
+
+== Category ==
+
+=== Get Category ===
+
+Get just the basic information of a Category, without it's dependencies:
+{{{
+Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdClean(ID_CATEGORY);
+}}}
+
+Get category with it's children:
+{{{
+Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdWithChildren(ID_CATEGORY);
+}}}
+
+Get category with it's parent:
+{{{
+Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdWithParent(ID_CATEGORY);
+}}}
+
+Get category with it's parent and children:
+{{{
+Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdWithParentAndChildren(ID_CATEGORY);
+}}}
+
