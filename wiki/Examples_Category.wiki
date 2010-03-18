@@ -28,7 +28,7 @@ Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdWithP
 }}}
 
 == Category Attributes ==
-Get information about the attributes of the store's categories. If a category attribute its of the type "select" or "multiselect", then its maybe has options (CategoryAttributeOption).
+Get information about the attributes of the store's categories. If a category attribute its of the type "select" or "multiselect", then its maybe has options (  [http://code.google.com/p/magja/source/browse/trunk/src/main/java/code/google/magja/model/category/CategoryAttributeOption.java CategoryAttributeOption] ).
 
 List all category attributes:
 {{{
