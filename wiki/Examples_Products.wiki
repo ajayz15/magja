@@ -1,4 +1,4 @@
-#examples for manipulate products data 
+#summary examples for usage products service
 
 = Examples for manipulate Products =
 ----
