@@ -1,0 +1,7 @@
+#UML diagrams for Category
+
+= Category UML Diagrams =
+
+== Model ==
+
+http://magja.googlecode.com/files/CategoryModel.png
