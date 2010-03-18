@@ -4,23 +4,27 @@
 
 === Get Category ===
 
-Get just the basic information of a Category, without it's dependencies:
+Get only the basic information of a Category, without it's dependencies:
 {{{
 Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdClean(ID_CATEGORY);
+System.out.println(category.toString());
 }}}
 
 Get category with it's children:
 {{{
 Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdWithChildren(ID_CATEGORY);
+for (Category child : category.getChildren()) {
+    System.out.println(child.toString());
+}
 }}}
 
 Get category with it's parent:
 {{{
 Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdWithParent(ID_CATEGORY);
+System.out.println(category.getParent().toString());
 }}}
 
 Get category with it's parent and children:
 {{{
 Category category = RemoteServiceFactory.getCategoryRemoteService().getByIdWithParentAndChildren(ID_CATEGORY);
 }}}
-
