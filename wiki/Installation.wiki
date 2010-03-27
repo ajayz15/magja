@@ -1,0 +1,25 @@
+#summary guide for install magja
+
+= Manual Download =
+
+Download the jar [http://magja.googlecode.com/files/magja-0.0.1.jar here] and put in your classpath.
+
+= Automatic Installation through Maven =
+
+Just put the dependency on your pom.xml:
+
+{{{
+
+<dependencies>
+...
+    <dependency>
+      <groupId>com.google.code.magja</groupId>
+      <artifactId>magja</artifactId>
+      <version>0.0.1</version>
+    </dependency>
+...
+</dependencies>
+
+}}}
+
+The artifact will be downloaded automatically to your project.
