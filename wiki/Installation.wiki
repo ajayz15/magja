@@ -13,7 +13,7 @@ Put the sonatype repository on your pom.xml like this:
 ...
         <repository>
             <id>sonatype</id>
-            <name>Sonatype AndroMDA Repository</name>
+            <name>Sonatype Repository</name>
             <url>http://oss.sonatype.org/content/groups/public</url>
         </repository>
 ...
