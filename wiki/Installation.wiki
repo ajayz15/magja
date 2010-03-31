@@ -17,7 +17,7 @@ Put the sonatype repository on your pom.xml like this:
             <url>http://oss.sonatype.org/content/groups/public</url>
         </repository>
 ...
-    </repositories>
+</repositories>
 }}}
 
 Then, also put the dependency on your pom.xml:
