@@ -6,7 +6,21 @@ Download the jar [http://magja.googlecode.com/files/magja-0.0.1.jar here] and pu
 
 = Automatic Installation through Maven =
 
-Just put the dependency on your pom.xml:
+Put the sonatype repository on your pom.xml like this:
+
+{{{
+<repositories>
+...
+        <repository>
+            <id>sonatype</id>
+            <name>Sonatype AndroMDA Repository</name>
+            <url>http://oss.sonatype.org/content/groups/public</url>
+        </repository>
+...
+    </repositories>
+}}}
+
+Then, also put the dependency on your pom.xml:
 
 {{{
 
