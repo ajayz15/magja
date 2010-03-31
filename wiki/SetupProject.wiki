@@ -22,6 +22,9 @@ Source: [http://m2eclipse.sonatype.org/installing-m2eclipse.html]
 
 We recommends to use Eclipse Subversive Plugin to use SVN on your eclipse, you can install it from the instructions: [http://www.eclipse.org/subversive/documentation/gettingStarted/aboutSubversive/install.php]
 
+ # Select *Help* > *Install New Software*. This should display the "Install" dialog.
+ # Paste following URL "http://subclipse.tigris.org/update_1.6.x" into the field named *Work with:* and press Enter. This should cause Eclipse to update list of available plugins and components.
+
  # Once you have installed the subversive, go to "SVN Repository Exploring" perspective, click on the "New Repository Location" button (left-up).
  # The "New Repository Location" will pop-up, fill the URL field with the following http://magja.googlecode.com/svn/, then click Finish.
  # The new location will appear on left side of your perspective, just right-click on trunk folder and choose "Checkout As New Project"
