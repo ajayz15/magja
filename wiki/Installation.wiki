@@ -37,3 +37,22 @@ Then, also put the dependency on your pom.xml:
 }}}
 
 The artifact will be downloaded automatically to your project.
+
+=== Create the Magento Connection Properties File ===
+
+Create the file /src/main/resources/magento-api.properties (or in your default classpath) with your proper data to magento installation, for example:
+
+{{{
+# connection parameters
+magento-api-username=yourMagentoApiUser
+magento-api-password=youtMagentoApiPassword
+magento-api-url=http://localhost/magento/index.php/api/soap/
+
+# the ID of the default attribute set
+default-attribute-set-id=4 
+}}}
+
+
+=== Extend Magento Product Attribute Api ===
+
+For manipulate the Product Attribute on Magento, you need first extend de Product Attribute Api on Magento, just follow the instructions on that page: http://www.panticz.de/Extend-Magento-Product-Attribute-Api
