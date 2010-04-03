@@ -35,11 +35,26 @@ Once you had check out the project, right-click on the project, the sub-menu wil
 
 To learn more about maven go to: [http://maven.apache.org/index.html]
 
-=== Change the Magento Properties File ===
+=== Change the Magento Connection Properties File ===
 
-Change the file /src/main/resources/magento-api.properties with proper data to your magento installation.
+Change or create the file /src/main/resources/magento-api.properties with yout proper data to magento installation, for example:
+
+{{{
+# connection parameters
+magento-api-username=yourMagentoApiUser
+magento-api-password=youtMagentoApiPassword
+magento-api-url=http://localhost/magento/index.php/api/soap/
+
+# the ID of the default attribute set
+default-attribute-set-id=4 
+}}}
 
 
-That's all, to test if you can connect to magento API, run the "testConnectionLogin" method of the class "ConnectionTest" as JUnit Test.
+For test if you can connect to magento API, run the "testConnectionLogin" method of the class "ConnectionTest" as JUnit Test.
+
+=== Extend Magento Product Attribute Api ===
+
+For manipulate the Product Attribute on Magento, you need first extend de Product Attribute Api on Magento, just follow the instructions on that page: http://www.panticz.de/Extend-Magento-Product-Attribute-Api
+
 
 ----
