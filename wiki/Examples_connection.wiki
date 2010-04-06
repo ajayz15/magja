@@ -1,0 +1,31 @@
+#summary examples for connection configuration
+
+= Examples for create a connection to Magento host =
+----
+== Create connection==
+
+=== with parameter on runtime ===
+{{{
+String user = "soap";
+String pass = "test123";
+String host = "http://YOUR_HOST_IP/index.php/api/soap/";
+
+// get default connection
+MagentoSoapClient magentoSoapClient = MagentoSoapClient.getInstance();
+
+// configure connection
+SoapConfig soapConfig = new SoapConfig(user, pass, host);
+magentoSoapClient.setConfig(soapConfig);
+}}}
+
+=== List all products without dependencies (faster) ===
+{{{
+// get category object
+CategoryRemoteService categoryRemoteService = new CategoryRemoteServiceImpl();
+categoryRemoteService.setSoapClient(magentoSoapClient);
+
+// get details for category with id 2
+Category category = categoryRemoteService.getByIdClean(2);
+System.out.println(category.toString());
+}}}
+----
