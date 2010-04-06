@@ -2,7 +2,7 @@
 
 = Examples for create a connection to Magento host =
 ----
-== Create connection==
+== Create connection ==
 
 === with parameter on runtime ===
 {{{
@@ -18,7 +18,7 @@ SoapConfig soapConfig = new SoapConfig(user, pass, host);
 magentoSoapClient.setConfig(soapConfig);
 }}}
 
-=== List all products without dependencies (faster) ===
+=== Create category object ===
 {{{
 // get category object
 CategoryRemoteService categoryRemoteService = new CategoryRemoteServiceImpl();
