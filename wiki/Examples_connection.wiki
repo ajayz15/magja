@@ -28,4 +28,19 @@ categoryRemoteService.setSoapClient(magentoSoapClient);
 Category category = categoryRemoteService.getByIdClean(2);
 System.out.println(category.toString());
 }}}
+
+
+=== Create category object ===
+{{{
+// get region object
+RegionRemoteService regionRemoteService = new RegionRemoteServiceImpl();
+regionRemoteService.setSoapClient(magentoSoapClient);
+
+// get all regions for US
+List<Region> regions = regionRemoteService.list("US");
+for (Region region : regions) {
+	System.out.println(region.toString());
+}
+}}}
+
 ----
