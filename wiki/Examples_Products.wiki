@@ -44,13 +44,9 @@ product.setMetaDescription("one two tree");
 product.setGoogleCheckout(true);
 
 // category
-Category category1 = new Category();
-category1.setId(10);
-Category category2 = new Category();
-category2.setId(20);
 List<Category> categorys = new ArrayList<Category>();
-categorys.add(category1);
-categorys.add(category2);
+categorys.add(new Category(10));
+categorys.add(new Category(20));
 product.setCategories(categorys);
 
 // websites - set the website for product
