@@ -50,9 +50,8 @@ categorys.add(new Category(20));
 product.setCategories(categorys);
 
 // websites - set the website for product
-Integer[] websites = { 1 }; // broken
-product.setWebsites(websites); // broken
-product.set("websites", new String[]{"1"});
+Integer[] websites = { 1 };
+product.setWebsites(websites);
 
 // inventory - set the inventory for product
 product.setQty(new Double(20));
