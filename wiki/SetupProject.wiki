@@ -8,6 +8,10 @@
  # Since Ubuntu Lucid Lynx 10.04 you have to add Canonical Partner repository "deb http://archive.canonical.com/ubuntu lucid partner" to your /etc/apt/sources.list first to by able to install sun-java6-jdk.
  # To install eclipse run this command in your terminal: *sudo apt-get install -y eclipse sun-java6-jdk*
 
+==== On Windows / Mac ====
+ # Install Java Standard Edition JDK 6 first: http://www.oracle.com/technetwork/java/javase/downloads/
+ # Download and install *Eclipse IDE for Java Developers* package from http://www.eclipse.org/downloads/ homepage.
+
 === Install Maven for Eclipse Plugin ===
 
 On Eclipse, follow these instructions:
