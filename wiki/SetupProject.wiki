@@ -14,6 +14,7 @@ On Eclipse, follow these instructions:
  # Choose *"Maven Integration for Eclipse"* and press click Next >. Eclipse will then check to see if there are any issues which would prevent a successful installation.
  # Click *Next >* and agree to the terms of the Eclipse Public License v1.0.
  # Click *Finish* to begin the installation process. Eclipse will then download and install the necessary components.
+ # If the "Selection needed" dialog appears, click *Select All* and then *OK* button
  # Once the installation process is finished, Eclipse will ask you if you want to restart the IDE. It's strongly recommends that you restart your IDE after installing m2eclipse.
 
 Source: [http://m2eclipse.sonatype.org/installing-m2eclipse.html]
