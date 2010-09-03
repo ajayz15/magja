@@ -9,7 +9,7 @@
  # To install eclipse run this command in your terminal: *sudo apt-get install -y eclipse sun-java6-jdk*
 
 ==== On Windows / Mac: ====
- # Install Java Standard Edition JDK 6 first: http://www.oracle.com/technetwork/java/javase/downloads/
+ # Install *Java Standard Edition JDK 6* first: http://www.oracle.com/technetwork/java/javase/downloads/
  # Download and install *Eclipse IDE for Java Developers* package from http://www.eclipse.org/downloads/ homepage.
 
 === Install Maven for Eclipse Plugin ===
