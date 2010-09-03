@@ -3,8 +3,9 @@
 = Setup developer environment  =
 
 ----
-== Setup in Eclipse ==
-
+=== Install Eclipse ===
+On Ubuntu:
+ # Click following link: [apt://eclipse,sun-java6-jdk] or run this command in your terminal: *sudo apt-get install -y eclipse sun-java6-jdk*. Since Ubuntu Lucid Lynx 10.04 you have to add Canonical Partner repository "deb http://archive.canonical.com/ubuntu lucid partner" to your /etc/apt/sources.list first to by able to install sun-java6-jdk).
 === Install Maven for Eclipse Plugin ===
 
 On Eclipse, follow these instructions:
