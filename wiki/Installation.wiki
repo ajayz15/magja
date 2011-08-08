@@ -2,7 +2,7 @@
 
 = Manual Download =
 
-Download the jar [http://magja.googlecode.com/files/magja-0.0.1.jar here] and put in your classpath.
+Download the jar file [http://code.google.com/p/magja/downloads/list here] and put in your classpath.
 
 = Automatic Installation through Maven =
 
