@@ -59,3 +59,14 @@ default-root-category-id=2
 === Extend Magento Catalog Api ===
 
 The Magento Core API doesn't have methods to manipulate some features wich are required for Magja. So you have to install a Magento Module to provide that's features, all you have to do is download the Magja Magento Extension Module from http://code.google.com/p/magja/downloads/detail?name=MagjaCatalogExt.zip
+
+{{{
+# download package
+wget http://magja.googlecode.com/files/MagjaCatalogExt.zip -O /tmp/MagjaCatalogExt.zip
+
+# extract to magento directory (if necessary change /var/www/ to your magento dir)
+unzip /tmp/MagjaCatalogExt.zip -d /var/www/
+
+# change file owner to webserver user
+chown www-data:www-data /var/www/app/code/community/Magja -R
+}}}
