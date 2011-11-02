@@ -3,7 +3,7 @@
 	<groupId>com.google.code.magja</groupId>
 	<artifactId>magja</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.4</version>
 	<name>magja</name>
 	<description>
 		Magja is a java connector for access the Magento API (http://www.magentocommerce.com/support/magento_core_api),
@@ -19,9 +19,9 @@
 	</properties>
 	
 	<scm>
-		<url>http://magja.googlecode.com/svn/trunk</url>
-		<connection>scm:svn:http://magja.googlecode.com/svn/trunk</connection>
-		<developerConnection>scm:svn:https://magja.googlecode.com/svn/trunk</developerConnection>
+		<url>http://magja.googlecode.com/svn/tags/magja-0.0.4</url>
+		<connection>scm:svn:http://magja.googlecode.com/svn/tags/magja-0.0.4</connection>
+		<developerConnection>scm:svn:https://magja.googlecode.com/svn/tags/magja-0.0.4</developerConnection>
 	</scm>
 
 	<organization>
@@ -316,7 +316,7 @@
 							<executable>scala</executable>
 							<arguments>
 								<argument>-cp</argument>
-								<classpath/>
+								<classpath />
 								<argument>-Dlogback.configurationFile=${project.basedir}/logback.xml</argument>
 								<argument>-deprecation</argument>
 <!-- 								<argument>-J-Xdebug</argument> -->
